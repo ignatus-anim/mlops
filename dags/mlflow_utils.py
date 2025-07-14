@@ -36,7 +36,9 @@ def setup_mlflow(experiment_name, tracking_uri=None):
     else:
         experiment_id = experiment.experiment_id
         logging.info(f"Using existing MLflow experiment: {experiment_name}")
-    
+
+    # Set this experiment as the default for forthcoming runs
+    mlflow.set_experiment(experiment_name)
     return experiment_id
 
 def log_params_and_metrics(params, metrics):
@@ -148,6 +150,10 @@ def log_git_info():
     """
     Log Git repository information to MLflow
     """
+    # If not in a git repository, skip quietly
+    if not os.path.exists('.git'):
+        logging.info('No .git directory found; skipping git info logging')
+        return
     try:
         # Get git commit hash
         git_commit = subprocess.check_output(['git', 'rev-parse', 'HEAD']).decode('ascii').strip()

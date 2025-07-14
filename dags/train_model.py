@@ -4,6 +4,7 @@ import pickle
 import json
 import os
 import logging
+import datetime
 from s3_utils import read_csv_from_s3, save_pickle_to_s3, save_json_to_s3
 
 # Optional mlflow imports
@@ -121,7 +122,11 @@ def train_model(input_path, model_path, columns_path, track_with_mlflow=True, ml
     # Set up MLflow if tracking is enabled
     if track_with_mlflow and MLFLOW_AVAILABLE:
         from mlflow_utils import setup_mlflow, start_run, end_run, log_environment_info, log_git_info, log_data_info
-        setup_mlflow(mlflow_experiment_name)
+
+        # Create a unique experiment name per execution
+        timestamp_str = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        unique_experiment_name = f"{mlflow_experiment_name}_{timestamp_str}"
+        setup_mlflow(unique_experiment_name)
         
         # Log environment and git information for reproducibility
         log_environment_info()
@@ -157,8 +162,12 @@ def train_model(input_path, model_path, columns_path, track_with_mlflow=True, ml
             )
             
             results[model_name] = {'model': model, 'params': best_params, 'metrics': metrics}
-            
-            # Already handled above
+
+            # Update best model based on R² score
+            if metrics.get('r2', float('-inf')) > best_score:
+                best_score = metrics['r2']
+                best_model = model
+                best_model_name = model_name
             
             if track_with_mlflow:
                 # Log all parameters, not just the best ones
@@ -177,8 +186,15 @@ def train_model(input_path, model_path, columns_path, track_with_mlflow=True, ml
                 # Log metrics
                 mlflow.log_metrics(metrics)
                 
-                # Log the model
-                mlflow.sklearn.log_model(model, name=f"{model_name}_model")
+                # Log the model with signature and input example to avoid warnings
+                try:
+                    from mlflow.models import infer_signature
+                    signature = infer_signature(X_train, y_train)
+                    input_example = X_test.iloc[:1]
+                    mlflow.sklearn.log_model(model, name=f"{model_name}_model", signature=signature, input_example=input_example)
+                except Exception as e:
+                    logging.warning(f"Could not infer signature: {e}. Logging model without signature.")
+                    mlflow.sklearn.log_model(model, name=f"{model_name}_model")
                 
                 # Save model pickle to S3 as an artifact
                 model_pickle_path = f"/tmp/{model_name}_model.pickle"
@@ -195,6 +211,16 @@ def train_model(input_path, model_path, columns_path, track_with_mlflow=True, ml
     if best_model:
         save_model(best_model, model_path)
         save_columns(df_processed.drop(['price'], axis='columns'), columns_path)
+
+        # Also save best artifacts to dedicated S3 folder
+        bucket = os.environ.get('MLFLOW_S3_BUCKET', 'mlops-bucket0982')
+        best_prefix = 'best_model'
+        best_model_s3_path = f"s3://{bucket}/{best_prefix}/{os.path.basename(model_path)}"
+        best_columns_s3_path = f"s3://{bucket}/{best_prefix}/{os.path.basename(columns_path)}"
+        logging.info(f"Saving best model artifacts to {best_model_s3_path} and {best_columns_s3_path}")
+        save_model(best_model, best_model_s3_path)
+        save_columns(df_processed.drop(['price'], axis='columns'), best_columns_s3_path)
+
         logging.info(f"Best model ({best_model_name}) saved with R² score: {best_score:.4f}")
         logging.info(f"Training completed. Trained {len(results)} models.")
     

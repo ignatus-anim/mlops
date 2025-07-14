@@ -1,0 +1,16 @@
+{"timestamp":"2025-07-14T11:31:14.857557","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-14T11:31:14.857910","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-14T11:31:14.859006","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-14T11:31:15.155630","level":"info","event":"Starting data preprocessing...","logger":"root"}
+{"timestamp":"2025-07-14T11:31:15.155730","level":"info","event":"Loading data from s3://mlops-bucket0982/data/raw/train.csv","logger":"root"}
+{"timestamp":"2025-07-14T11:31:15.198982","level":"info","event":"Connection Retrieved 'aws_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-14T11:31:15.199116","level":"info","event":"AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-07-14T11:31:17.497836","level":"info","event":"Cleaning data...","logger":"root"}
+{"timestamp":"2025-07-14T11:31:17.515038","level":"warning","event":"/opt/airflow/dags/preprocess.py:44: SettingWithCopyWarning: \nA value is trying to be set on a copy of a slice from a DataFrame.\nTry using .loc[row_indexer,col_indexer] = value instead\n\nSee the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy\n  df['price_per_sqft'] = df['price'] * 100000 / df['total_sqft']\n","logger":"py.warnings"}
+{"timestamp":"2025-07-14T11:31:17.516430","level":"info","event":"Removing price outliers...","logger":"root"}
+{"timestamp":"2025-07-14T11:31:17.954990","level":"info","event":"Removing BHK outliers...","logger":"root"}
+{"timestamp":"2025-07-14T11:31:18.305685","level":"info","event":"Connection Retrieved 'aws_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-14T11:31:18.305830","level":"info","event":"AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-07-14T11:31:19.683453","level":"info","event":"Preprocessed data saved to s3://mlops-bucket0982/data/processed/preprocessed_data.csv","logger":"root"}
+{"timestamp":"2025-07-14T11:31:19.683637","level":"info","event":"Final dataset shape: (3035, 5)","logger":"root"}
+{"timestamp":"2025-07-14T11:31:19.684699","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
