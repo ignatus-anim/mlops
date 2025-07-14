@@ -1,0 +1,37 @@
+# Environment & configuration
+.env
+*.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE & editor folders
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+
+# Airflow generated logs
+logs/
+
+# MLflow local run directory
+mlruns/
+
+# Test/type checking caches
+.pytest_cache/
+.mypy_cache/
+
+# Docker logs and temp files
+*.log

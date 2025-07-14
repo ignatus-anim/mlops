@@ -1,8 +1,0 @@
-{"timestamp":"2025-07-14T11:04:34.458720","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
-{"timestamp":"2025-07-14T11:04:34.459111","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
-{"timestamp":"2025-07-14T11:04:34.460410","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
-{"timestamp":"2025-07-14T11:04:34.467980","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
-{"timestamp":"2025-07-14T11:04:34.504737Z","level":"info","event":"Model training completed at 2025-07-14 11:04:34.466432","chan":"stdout","logger":"task"}
-{"timestamp":"2025-07-14T11:04:34.504865Z","level":"info","event":"Model saved to s3://mlops-bucket0982/models/banglore_home_prices_model.pickle","chan":"stdout","logger":"task"}
-{"timestamp":"2025-07-14T11:04:34.504969Z","level":"info","event":"Columns saved to s3://mlops-bucket0982/models/columns.json","chan":"stdout","logger":"task"}
-{"timestamp":"2025-07-14T11:04:34.505061Z","level":"info","event":"Validation results in s3://mlops-bucket0982/models/validation","chan":"stdout","logger":"task"}
