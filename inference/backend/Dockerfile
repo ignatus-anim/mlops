@@ -21,7 +21,9 @@ RUN pip install --no-cache-dir \
         boto3 \
         numpy \
         pandas \
-        scikit-learn
+        scikit-learn \
+        sqlalchemy \
+        psycopg2-binary
 
 # Environment variables
 ENV PYTHONUNBUFFERED=1 \

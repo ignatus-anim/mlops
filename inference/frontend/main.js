@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:6001/api"; 
+const API_BASE = "http://localhost:7000/api"; 
 
 async function loadLocations() {
   try {

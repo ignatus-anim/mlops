@@ -1,5 +1,7 @@
 from flask import Flask, request, jsonify
 import util
+import os
+from log_db import log_request
 
 app = Flask(__name__)
 
@@ -19,9 +21,15 @@ def predict_home_price():
     bhk = int(request.form['bhk'])
     bath = int(request.form['bath'])
 
-    response = jsonify({
-        'estimated_price': util.get_estimated_price(location,total_sqft,bhk,bath)
-    })
+    pred = util.get_estimated_price(location,total_sqft,bhk,bath)
+    # log to DB
+    variant = os.getenv("MODEL_PREFIX", "best_model")
+    try:
+        log_request(variant, location, total_sqft, bhk, bath, pred)
+    except Exception as e:
+        app.logger.warning("log_request failed: %s", e)
+
+    response = jsonify({'estimated_price': pred})
     response.headers.add('Access-Control-Allow-Origin', '*')
 
     return response

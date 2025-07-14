@@ -1,0 +1,28 @@
+services:
+  infer-prod:
+    build:
+      context: ./inference/backend
+    environment:
+      - MODEL_PREFIX=best_model
+      - MLFLOW_S3_BUCKET=${MLFLOW_S3_BUCKET:-mlops-bucket0982}
+    ports:
+      - "6001:6001"
+
+  infer-cand:
+    build:
+      context: ./inference/backend
+    environment:
+      - MODEL_PREFIX=candidate_model
+      - MLFLOW_S3_BUCKET=${MLFLOW_S3_BUCKET:-mlops-bucket0982}
+    ports:
+      - "6002:6002"
+
+  router:
+    image: nginx:1.27-alpine
+    volumes:
+      - ./router/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "7000:7000"
+    depends_on:
+      - infer-prod
+      - infer-cand

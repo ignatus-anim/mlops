@@ -30,7 +30,7 @@ def load_saved_artifacts():
     global __data_columns, __locations, __model
     
     bucket_name = os.environ.get('MLFLOW_S3_BUCKET', 'mlops-bucket0982')
-    best_prefix = os.environ.get('BEST_MODEL_PREFIX', 'best_model')
+    best_prefix = os.environ.get('MODEL_PREFIX', os.environ.get('BEST_MODEL_PREFIX', 'best_model'))
     s3 = boto3.client('s3')
     
     # Build S3 keys
