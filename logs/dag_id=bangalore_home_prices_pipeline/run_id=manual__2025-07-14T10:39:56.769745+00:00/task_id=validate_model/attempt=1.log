@@ -1,0 +1,32 @@
+{"timestamp":"2025-07-14T10:40:59.679833","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-14T10:40:59.680211","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-14T10:40:59.681359","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-14T10:41:00.539227","level":"info","event":"generated new fontManager","logger":"matplotlib.font_manager"}
+{"timestamp":"2025-07-14T10:41:02.200965","level":"info","event":"MLflow tracking URI set to: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-14T10:41:02.417566","level":"info","event":"Using existing MLflow experiment: bangalore_home_prices","logger":"root"}
+{"timestamp":"2025-07-14T10:41:02.528917","level":"info","event":"Started MLflow run: model_validation_20250714_104102","logger":"root"}
+{"timestamp":"2025-07-14T10:41:02.529060","level":"info","event":"Loading model from s3://mlops-bucket0982/models/banglore_home_prices_model.pickle","logger":"root"}
+{"timestamp":"2025-07-14T10:41:02.595220","level":"info","event":"Connection Retrieved 'aws_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-14T10:41:02.595430","level":"info","event":"AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-07-14T10:41:03.894071","level":"warning","event":"/home/airflow/.local/lib/python3.12/site-packages/sklearn/base.py:380: InconsistentVersionWarning: Trying to unpickle estimator DecisionTreeRegressor from version 1.7.0 when using version 1.6.1. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:\nhttps://scikit-learn.org/stable/model_persistence.html#security-maintainability-limitations\n  warnings.warn(\n","logger":"py.warnings"}
+{"timestamp":"2025-07-14T10:41:03.895233","level":"info","event":"Starting model validation...","logger":"root"}
+{"timestamp":"2025-07-14T10:41:03.901510","level":"info","event":"Connection Retrieved 'aws_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-14T10:41:03.901660","level":"info","event":"AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-07-14T10:41:04.884634","level":"info","event":"Model Metrics - RMSE: 33.09444908215037, MAE: 17.53599173623398, R²: 0.8631324337612728","logger":"root"}
+{"timestamp":"2025-07-14T10:41:04.897835","level":"info","event":"Connection Retrieved 'aws_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-14T10:41:04.897973","level":"info","event":"AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-07-14T10:41:05.747556","level":"info","event":"Connection Retrieved 'aws_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-14T10:41:05.747713","level":"info","event":"AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-07-14T10:41:07.144990","level":"info","event":"Connection Retrieved 'aws_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-14T10:41:07.145144","level":"info","event":"AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-07-14T10:41:08.349934","level":"info","event":"Validation plots saved to s3://mlops-bucket0982/models/validation","logger":"root"}
+{"timestamp":"2025-07-14T10:41:08.350040","level":"info","event":"Validation metrics saved to s3://mlops-bucket0982/models/validation/model_metrics.json","logger":"root"}
+{"timestamp":"2025-07-14T10:41:08.525411","level":"info","event":"Parameters and metrics logged to MLflow","logger":"root"}
+{"timestamp":"2025-07-14T10:41:08.525573","level":"warning","event":"Artifact path not found: s3://mlops-bucket0982/models/validation/actual_vs_predicted.png","logger":"root"}
+{"timestamp":"2025-07-14T10:41:08.525654","level":"warning","event":"Artifact path not found: s3://mlops-bucket0982/models/validation/residual_plot.png","logger":"root"}
+{"timestamp":"2025-07-14T10:41:08.525723","level":"warning","event":"Artifact path not found: s3://mlops-bucket0982/models/validation/model_metrics.json","logger":"root"}
+{"timestamp":"2025-07-14T10:41:08.538282Z","level":"info","event":"🏃 View run model_validation_20250714_104102 at: http://mlflow:5000/#/experiments/1/runs/c932d87113cf4caa82a7fee23153e79c","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T10:41:08.538421Z","level":"info","event":"🧪 View experiment at: http://mlflow:5000/#/experiments/1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T10:41:08.547293","level":"info","event":"MLflow run ended","logger":"root"}
+{"timestamp":"2025-07-14T10:41:08.547472","level":"info","event":"Done. Returned value was: {'mse': 1095.2425600510435, 'rmse': 33.09444908215037, 'mae': 17.53599173623398, 'r2': 0.8631324337612728, 'timestamp': '2025-07-14 10:41:04'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-07-14T10:41:08.547628","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01980885-1778-7f2b-bd62-fb91e594d81c'), task_id='validate_model', dag_id='bangalore_home_prices_pipeline', run_id='manual__2025-07-14T10:39:56.769745+00:00', try_number=1, map_index=-1, hostname='963b30d9062b', context_carrier={}, task=<Task(PythonOperator): validate_model>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=0, start_date=datetime.datetime(2025, 7, 14, 10, 40, 59, 546646, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}

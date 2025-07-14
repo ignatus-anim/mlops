@@ -1,0 +1,10 @@
+# Custom MLflow image with Postgres driver pre-installed
+FROM ghcr.io/mlflow/mlflow:latest
+
+# Install Postgres driver
+RUN pip install --no-cache-dir psycopg2-binary
+
+# Expose MLflow default port
+EXPOSE 5000
+
+# Default command will be overridden by docker-compose

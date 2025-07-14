@@ -1,0 +1,442 @@
+{"timestamp":"2025-07-11T05:57:20.995402","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T05:57:20.998542","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T05:57:51.650419","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T05:57:51.652889","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T05:58:21.977593","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T05:58:21.980089","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T05:58:52.296239","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T05:58:52.298744","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T05:59:22.566848","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T05:59:22.569363","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T05:59:52.889922","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T05:59:52.892393","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:00:23.179258","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:00:23.182573","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:00:54.061706","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:00:54.067488","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:01:24.389076","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:01:24.392953","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:01:54.821146","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:01:54.826189","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:02:25.078400","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:02:25.081476","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:02:55.268465","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:02:55.271097","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:03:25.469299","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:03:25.471746","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:03:55.670900","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:03:55.673873","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:04:25.858835","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:04:25.861576","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:04:56.045405","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:04:56.047824","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:05:26.229847","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:05:26.232408","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:05:56.416003","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:05:56.418139","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:06:26.600003","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:06:26.602399","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:06:56.786719","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:06:56.788980","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:07:26.968814","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:07:26.971248","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:07:57.158490","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:07:57.161140","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:08:27.359571","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:08:27.361993","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:08:57.583120","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:08:57.586632","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:09:27.808302","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:09:27.811533","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:09:58.074967","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:09:58.079960","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:10:28.321861","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:10:28.324540","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:10:58.535493","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:10:58.537932","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:11:28.722393","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:11:28.724676","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:11:58.945462","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:11:58.947995","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:12:29.152547","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:12:29.154899","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:12:59.350669","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:12:59.353227","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:13:29.553234","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:13:29.555441","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:13:59.756674","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:13:59.759323","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:14:29.953006","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:14:29.955383","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:15:00.144262","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:15:00.148584","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:15:30.340103","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:15:30.342343","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:16:00.543208","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:16:00.546055","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:16:30.742352","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:16:30.744551","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:17:00.945220","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:17:00.947644","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:17:31.143214","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:17:31.145606","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:18:01.341381","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:18:01.343931","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:18:31.530490","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:18:31.533133","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:19:01.728927","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:19:01.731528","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:19:31.917397","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:19:31.919871","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:20:02.096192","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:20:02.098283","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:20:32.276709","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:20:32.279108","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:21:02.493590","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:21:02.496740","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:21:32.700663","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:21:32.703099","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:22:02.882547","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:22:02.884725","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:22:33.072809","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:22:33.075371","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:23:03.264918","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:23:03.267251","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:23:33.459700","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:23:33.462120","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:24:03.651732","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:24:03.654430","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:24:33.862637","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:24:33.865126","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:25:04.049520","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:25:04.051934","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:25:34.231215","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:25:34.233300","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:26:04.419861","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:26:04.421939","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:26:34.603839","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:26:34.605954","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:27:04.807529","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:27:04.810871","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:27:35.012857","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:27:35.014964","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:28:05.198718","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:28:05.200882","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:28:35.395151","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:28:35.397505","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:29:05.587576","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:29:05.590150","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:29:35.786847","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:29:35.789306","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:30:05.968167","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:30:05.970237","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:30:36.152833","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:30:36.155232","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:31:06.339399","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:31:06.342305","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:31:36.524990","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:31:36.527254","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:32:06.717886","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:32:06.720054","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:32:36.900960","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:32:36.903032","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T06:33:07.089380","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T06:33:07.091575","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:20:30.081117","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:20:30.084079","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:21:00.729132","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:21:00.731661","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:21:31.054947","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:21:31.057430","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:22:01.351259","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:22:01.353865","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:22:31.571956","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:22:31.574906","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:23:01.842897","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:23:01.845374","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:23:32.127723","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:23:32.130281","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:24:02.431249","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:24:02.433994","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:24:32.799756","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:24:32.803468","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:25:03.104837","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:25:03.109356","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:25:33.474052","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:25:33.476657","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:26:03.791110","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:26:03.793628","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:26:34.095221","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:26:34.097919","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:27:04.385351","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:27:04.387811","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:27:34.717840","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:27:34.720435","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:28:05.014744","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:28:05.017219","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:28:35.346326","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:28:35.348954","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:29:05.673122","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:29:05.675655","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:29:35.973847","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:29:35.976435","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:30:06.284415","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:30:06.287258","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:30:36.587808","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:30:36.590528","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:31:06.940471","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:31:06.943081","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:31:37.249062","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:31:37.252532","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:32:07.575257","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:32:07.578879","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:32:37.868854","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:32:37.871609","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:33:08.239074","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:33:08.241979","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:33:38.548740","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:33:38.551618","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:34:08.927125","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:34:08.929728","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:34:39.301592","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:34:39.304581","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:35:09.587021","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:35:09.589886","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:35:39.965960","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:35:39.969023","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:36:10.340898","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:36:10.345057","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:36:40.743303","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:36:40.746922","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:37:11.064601","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:37:11.067176","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:37:41.388079","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:37:41.391687","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:38:11.736777","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:38:11.741400","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:38:42.073391","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:38:42.075876","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:39:12.408008","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:39:12.410506","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:39:42.794435","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:39:42.798586","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:40:13.125597","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:40:13.128384","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:40:43.491659","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:40:43.494313","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:41:13.839447","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:41:13.841832","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:41:44.168360","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:41:44.171589","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:42:14.474595","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:42:14.477274","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:42:44.832343","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:42:44.835581","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:43:15.202077","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:43:15.205135","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:43:45.567019","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:43:45.569746","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:44:15.901736","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:44:15.904922","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:44:46.229227","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:44:46.232117","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:45:16.519660","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:45:16.522174","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:45:46.882672","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:45:46.886540","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:46:17.177172","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:46:17.180002","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:46:47.452192","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:46:47.455056","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:47:17.756564","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:47:17.758957","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:47:48.029254","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:47:48.031679","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:48:18.345108","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:48:18.347605","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:48:48.675985","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:48:48.678605","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:49:18.992293","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:49:18.994911","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:49:49.304508","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:49:49.307229","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:50:19.615140","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:50:19.618677","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:50:49.962804","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:50:49.965827","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:51:20.271655","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:51:20.274362","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:51:50.608427","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:51:50.611130","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:52:20.879300","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:52:20.882434","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:52:51.182058","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:52:51.185660","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:53:21.521514","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:53:21.525465","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:53:51.800232","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:53:51.804775","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:54:22.109369","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:54:22.112084","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:54:52.434350","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:54:52.436789","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:55:22.733611","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:55:22.736435","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:55:53.092744","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:55:53.095344","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:56:23.393483","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:56:23.396214","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:56:53.654461","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:56:53.657171","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:57:23.966866","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:57:23.971260","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:57:54.242011","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:57:54.245094","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:58:24.454991","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:58:24.458064","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:58:54.684995","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:58:54.690102","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:59:24.925864","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:59:24.929939","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T07:59:55.242725","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T07:59:55.246168","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:00:25.538187","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:00:25.541665","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:00:55.855884","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:00:55.859106","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:01:26.177141","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:01:26.180098","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:01:56.496122","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:01:56.498676","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:02:26.817975","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:02:26.820674","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:02:57.124113","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:02:57.127471","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:03:27.419610","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:03:27.422312","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:03:57.721589","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:03:57.724114","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:04:28.010252","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:04:28.012874","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:04:58.322580","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:04:58.325171","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:05:28.576447","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:05:28.579307","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:05:58.918657","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:05:58.922033","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:06:29.263701","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:06:29.266746","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:06:59.572735","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:06:59.576084","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:07:29.875182","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:07:29.878197","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:08:00.184762","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:08:00.187413","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:08:30.478618","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:08:30.481346","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:09:00.745374","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:09:00.747844","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:09:31.040428","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:09:31.042883","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:10:01.314461","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:10:01.317425","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:10:31.616557","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:10:31.619376","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:11:01.922898","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:11:01.925668","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:11:32.176598","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:11:32.179579","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:12:02.503125","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:12:02.505624","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:12:32.852780","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:12:32.855275","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:13:03.160952","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:13:03.163621","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:13:33.472321","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:13:33.474724","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:14:03.793852","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:14:03.797645","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:14:34.145528","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:14:34.148052","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:15:04.464217","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:15:04.467161","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:15:34.777009","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:15:34.780884","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:16:05.141019","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:16:05.143964","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:16:35.474589","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:16:35.477965","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:17:05.807543","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:17:05.810080","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:17:36.135286","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:17:36.138019","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:18:06.467662","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:18:06.470102","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:18:36.809863","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:18:36.812236","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:19:07.074773","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:19:07.077253","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:19:37.397955","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:19:37.400489","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:20:07.727199","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:20:07.729658","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:20:38.043413","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:20:38.046406","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:21:08.333399","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:21:08.337878","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:21:38.588220","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:21:38.591973","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:22:08.826791","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:22:08.830443","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:22:39.145973","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:22:39.150494","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:23:09.667342","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:23:09.673761","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:23:40.054051","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:23:40.056634","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:24:10.348770","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:24:10.354496","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:24:40.683119","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:24:40.690382","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:25:10.980688","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:25:10.983468","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:25:41.249725","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:25:41.252722","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:26:11.516507","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:26:11.519474","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:26:41.741817","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:26:41.744519","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:27:12.162434","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:27:12.165422","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:27:42.404247","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:27:42.407125","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:28:12.665800","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:28:12.669769","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:28:43.102306","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:28:43.105799","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:29:13.341079","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:29:13.343682","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:29:43.561601","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:29:43.564175","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:30:13.956047","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:30:13.958878","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:30:44.178743","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:30:44.181461","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:31:14.407978","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:31:14.410633","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:31:44.987679","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:31:44.991432","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:32:15.255916","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:32:15.259952","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:32:45.515257","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:32:45.519075","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:33:15.795688","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:33:15.799697","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:33:46.102431","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:33:46.106753","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:34:17.048094","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:34:17.093309","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:34:47.937665","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:34:47.958844","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-11T08:35:18.333565","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-11T08:35:18.338180","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}

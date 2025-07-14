@@ -1,0 +1,54 @@
+{"timestamp":"2025-07-14T11:03:46.965559","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-07-14T11:03:46.965881","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/bangalore_home_prices_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-14T11:03:46.966931","level":"info","event":"Using MLflow tracking URI: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-14T11:03:47.954850","level":"info","event":"Starting model training...","logger":"root"}
+{"timestamp":"2025-07-14T11:03:48.359861","level":"info","event":"Connection Retrieved 'aws_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-07-14T11:03:48.360018","level":"info","event":"AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-07-14T11:03:49.918424","level":"info","event":"Preparing features...","logger":"root"}
+{"timestamp":"2025-07-14T11:03:49.985284","level":"info","event":"Splitting data into train and test sets...","logger":"root"}
+{"timestamp":"2025-07-14T11:03:49.988249","level":"info","event":"MLflow tracking URI set to: http://mlflow:5000","logger":"root"}
+{"timestamp":"2025-07-14T11:03:50.021840","level":"info","event":"Using existing MLflow experiment: bangalore_home_prices","logger":"root"}
+{"timestamp":"2025-07-14T11:03:51.280480","level":"info","event":"Found credentials in environment variables.","logger":"botocore.credentials"}
+{"timestamp":"2025-07-14T11:03:52.012796","level":"info","event":"Logged environment information to MLflow","logger":"root"}
+{"timestamp":"2025-07-14T11:03:52.015242","level":"warning","event":"Failed to log git info: Command '['git', 'rev-parse', 'HEAD']' returned non-zero exit status 128.","logger":"root"}
+{"timestamp":"2025-07-14T11:03:52.027523Z","level":"error","event":"fatal: not a git repository (or any of the parent directories): .git","chan":"stderr","logger":"task"}
+{"timestamp":"2025-07-14T11:03:52.376439","level":"info","event":"Logged training dataset information to MLflow","logger":"root"}
+{"timestamp":"2025-07-14T11:03:52.697347","level":"info","event":"Logged test dataset information to MLflow","logger":"root"}
+{"timestamp":"2025-07-14T11:03:52.807733Z","level":"info","event":"🏃 View run painted-fish-540 at: http://mlflow:5000/#/experiments/1/runs/53ce5e5e3ca843ad86b3a655f2fd8112","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:03:52.807864Z","level":"info","event":"🧪 View experiment at: http://mlflow:5000/#/experiments/1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:03:52.838871","level":"info","event":"Started MLflow run: linear_regression_training","logger":"root"}
+{"timestamp":"2025-07-14T11:03:52.838985","level":"info","event":"Training linear_regression...","logger":"root"}
+{"timestamp":"2025-07-14T11:03:52.864335","level":"info","event":"linear_regression - RMSE: 49.4351, R²: 0.7797","logger":"root"}
+{"timestamp":"2025-07-14T11:03:56.139794Z","level":"error","event":"\u001b[31m2025/07/14 11:03:56 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.\u001b[0m","chan":"stderr","logger":"task"}
+{"timestamp":"2025-07-14T11:03:58.325685Z","level":"info","event":"🏃 View run linear_regression_training at: http://mlflow:5000/#/experiments/1/runs/62369d47970b44ffa8a7d5081dbe893b","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:03:58.325825Z","level":"info","event":"🧪 View experiment at: http://mlflow:5000/#/experiments/1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:03:58.341003","level":"info","event":"MLflow run ended","logger":"root"}
+{"timestamp":"2025-07-14T11:03:58.367268","level":"info","event":"Started MLflow run: lasso_training","logger":"root"}
+{"timestamp":"2025-07-14T11:03:58.367382","level":"info","event":"Training lasso...","logger":"root"}
+{"timestamp":"2025-07-14T11:03:58.479209","level":"info","event":"lasso - RMSE: 49.9645, R²: 0.7750","logger":"root"}
+{"timestamp":"2025-07-14T11:04:01.473562Z","level":"error","event":"\u001b[31m2025/07/14 11:04:01 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.\u001b[0m","chan":"stderr","logger":"task"}
+{"timestamp":"2025-07-14T11:04:03.688283Z","level":"info","event":"🏃 View run lasso_training at: http://mlflow:5000/#/experiments/1/runs/7d454857fe22475a96f28ea17bf35cb8","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:04:03.688441Z","level":"info","event":"🧪 View experiment at: http://mlflow:5000/#/experiments/1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:04:03.705994","level":"info","event":"MLflow run ended","logger":"root"}
+{"timestamp":"2025-07-14T11:04:03.736269","level":"info","event":"Started MLflow run: ridge_training","logger":"root"}
+{"timestamp":"2025-07-14T11:04:03.736378","level":"info","event":"Training ridge...","logger":"root"}
+{"timestamp":"2025-07-14T11:04:03.831894","level":"info","event":"ridge - RMSE: 49.4282, R²: 0.7798","logger":"root"}
+{"timestamp":"2025-07-14T11:04:07.049488Z","level":"error","event":"\u001b[31m2025/07/14 11:04:07 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.\u001b[0m","chan":"stderr","logger":"task"}
+{"timestamp":"2025-07-14T11:04:08.763857Z","level":"info","event":"🏃 View run ridge_training at: http://mlflow:5000/#/experiments/1/runs/15688fe1211345a3903c7ec92206a4a6","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:04:08.764186Z","level":"info","event":"🧪 View experiment at: http://mlflow:5000/#/experiments/1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:04:08.775616","level":"info","event":"MLflow run ended","logger":"root"}
+{"timestamp":"2025-07-14T11:04:08.803301","level":"info","event":"Started MLflow run: decision_tree_training","logger":"root"}
+{"timestamp":"2025-07-14T11:04:08.803458","level":"info","event":"Training decision_tree...","logger":"root"}
+{"timestamp":"2025-07-14T11:04:08.945916","level":"info","event":"decision_tree - RMSE: 53.1711, R²: 0.7452","logger":"root"}
+{"timestamp":"2025-07-14T11:04:12.006491Z","level":"error","event":"\u001b[31m2025/07/14 11:04:12 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.\u001b[0m","chan":"stderr","logger":"task"}
+{"timestamp":"2025-07-14T11:04:14.196380Z","level":"info","event":"🏃 View run decision_tree_training at: http://mlflow:5000/#/experiments/1/runs/742bf30e7f16444c9bc72b6a4ebb43b1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:04:14.196534Z","level":"info","event":"🧪 View experiment at: http://mlflow:5000/#/experiments/1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:04:14.205575","level":"info","event":"MLflow run ended","logger":"root"}
+{"timestamp":"2025-07-14T11:04:14.227252","level":"info","event":"Started MLflow run: random_forest_training","logger":"root"}
+{"timestamp":"2025-07-14T11:04:14.227361","level":"info","event":"Training random_forest...","logger":"root"}
+{"timestamp":"2025-07-14T11:04:17.520655","level":"info","event":"random_forest - RMSE: 51.9795, R²: 0.7565","logger":"root"}
+{"timestamp":"2025-07-14T11:04:20.576789Z","level":"error","event":"\u001b[31m2025/07/14 11:04:20 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.\u001b[0m","chan":"stderr","logger":"task"}
+{"timestamp":"2025-07-14T11:04:24.695417Z","level":"info","event":"🏃 View run random_forest_training at: http://mlflow:5000/#/experiments/1/runs/4b9de381d5aa40be8d2b452023ea046b","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:04:24.695564Z","level":"info","event":"🧪 View experiment at: http://mlflow:5000/#/experiments/1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-07-14T11:04:24.710455","level":"info","event":"MLflow run ended","logger":"root"}
+{"timestamp":"2025-07-14T11:04:24.711444","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
