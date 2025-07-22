@@ -39,6 +39,64 @@
     </form>
 
     <div id="result" class="alert alert-info text-center mt-4 d-none"></div>
+
+    <!-- Feedback Section -->
+    <div id="feedback-section" class="card p-4 shadow-sm mx-auto mt-4 d-none" style="max-width: 480px;">
+      <h5 class="text-center mb-3">How accurate was this prediction?</h5>
+      
+      <!-- Rating Buttons -->
+      <div class="mb-3">
+        <label class="form-label">Rate the prediction accuracy:</label>
+        <div class="btn-group w-100" role="group">
+          <input type="radio" class="btn-check" name="rating" id="rating1" value="1">
+          <label class="btn btn-outline-danger" for="rating1">1 ⭐</label>
+          
+          <input type="radio" class="btn-check" name="rating" id="rating2" value="2">
+          <label class="btn btn-outline-warning" for="rating2">2 ⭐</label>
+          
+          <input type="radio" class="btn-check" name="rating" id="rating3" value="3">
+          <label class="btn btn-outline-secondary" for="rating3">3 ⭐</label>
+          
+          <input type="radio" class="btn-check" name="rating" id="rating4" value="4">
+          <label class="btn btn-outline-primary" for="rating4">4 ⭐</label>
+          
+          <input type="radio" class="btn-check" name="rating" id="rating5" value="5">
+          <label class="btn btn-outline-success" for="rating5">5 ⭐</label>
+        </div>
+      </div>
+
+      <!-- Quick Feedback Buttons -->
+      <div class="mb-3">
+        <label class="form-label">Or choose quick feedback:</label>
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-outline-success" onclick="submitQuickFeedback('accurate')">
+            ✅ Accurate
+          </button>
+          <button type="button" class="btn btn-outline-warning" onclick="submitQuickFeedback('too_high')">
+            📈 Too High
+          </button>
+          <button type="button" class="btn btn-outline-info" onclick="submitQuickFeedback('too_low')">
+            📉 Too Low
+          </button>
+        </div>
+      </div>
+
+      <!-- Optional Comment -->
+      <div class="mb-3">
+        <label for="feedback-comment" class="form-label">Additional comments (optional):</label>
+        <textarea id="feedback-comment" class="form-control" rows="2" placeholder="Any specific feedback..."></textarea>
+      </div>
+
+      <!-- Actual Price Input -->
+      <div class="mb-3">
+        <label for="actual-price" class="form-label">Know the actual price? (optional):</label>
+        <input type="number" id="actual-price" class="form-control" placeholder="Enter actual price in lakhs">
+      </div>
+
+      <button type="button" class="btn btn-primary w-100" onclick="submitDetailedFeedback()">
+        Submit Feedback
+      </button>
+    </div>
   </div>
 
   <script src="main.js"></script>
