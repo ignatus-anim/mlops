@@ -35,3 +35,4 @@ mlruns/
 
 # Docker logs and temp files
 *.log
+plugins
