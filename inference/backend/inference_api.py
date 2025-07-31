@@ -63,11 +63,16 @@ def predict_home_price():
             ERROR_COUNT.labels(variant=variant, error_type='db_log_failed').inc()
             prediction_id = None
 
-    return jsonify({
-        'estimated_price': pred,
-        'prediction_id': prediction_id,
-        'response_time_ms': round(prediction_time_ms, 2)
-    })
+        return jsonify({
+            'estimated_price': pred,
+            'prediction_id': prediction_id,
+            'response_time_ms': round(prediction_time_ms, 2)
+        })
+    
+    except Exception as e:
+        app.logger.error(f"Prediction failed: {e}")
+        ERROR_COUNT.labels(variant=variant, error_type='prediction_failed').inc()
+        return jsonify({'error': 'Prediction failed'}), 500
 
 @app.route('/api/feedback', methods=['POST'])
 def submit_feedback():
@@ -145,7 +150,7 @@ def get_metrics():
         engine = create_engine(ENGINE_STR)
         with engine.begin() as conn:
             # Get prediction metrics
-            metrics_data = conn.execute(text("""
+            metrics_data = conn.execute(text(f"""
                 SELECT 
                     COUNT(*) as total_predictions,
                     AVG(prediction_time_ms) as avg_latency_ms,
@@ -155,11 +160,11 @@ def get_metrics():
                     MAX(prediction_time_ms) as max_latency_ms
                 FROM prediction_logs 
                 WHERE variant = :variant 
-                  AND ts > now() - interval '%s hours'
-            """) % hours_back, {"variant": variant}).fetchone()
+                  AND ts > now() - interval '{hours_back} hours'
+            """), {"variant": variant}).fetchone()
             
             # Get feedback metrics
-            feedback_data = conn.execute(text("""
+            feedback_data = conn.execute(text(f"""
                 SELECT 
                     COUNT(*) as feedback_count,
                     AVG(CASE WHEN feedback_type = 'rating' THEN feedback_value END) as avg_rating,
@@ -169,8 +174,8 @@ def get_metrics():
                 FROM user_feedback uf
                 JOIN prediction_logs pl ON uf.prediction_id = pl.id
                 WHERE pl.variant = :variant 
-                  AND uf.feedback_ts > now() - interval '%s hours'
-            """) % hours_back, {"variant": variant}).fetchone()
+                  AND uf.feedback_ts > now() - interval '{hours_back} hours'
+            """), {"variant": variant}).fetchone()
         
         metrics = {
             "variant": variant,
@@ -278,11 +283,12 @@ def tail_logs():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
-if __name__ == "__main__":
-    print("Starting Python Flask Server For Home Price Prediction on port 6001...")
-    util.load_saved_artifacts()
-    app.run(host="0.0.0.0", port=6001)
 @app.route('/metrics', methods=['GET'])
 def prometheus_metrics():
     """Prometheus metrics endpoint"""
     return generate_latest(), 200, {'Content-Type': CONTENT_TYPE_LATEST}
+
+if __name__ == "__main__":
+    print("Starting Python Flask Server For Home Price Prediction on port 6001...")
+    util.load_saved_artifacts()
+    app.run(host="0.0.0.0", port=6001)

@@ -6,3 +6,4 @@ boto3
 psutil
 SQLAlchemy>=2.0
 psycopg2-binary
+prometheus_client
