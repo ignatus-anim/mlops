@@ -14,7 +14,11 @@ PG_PWD = os.getenv("POSTGRES_PASSWORD", "airflow")
 PG_HOST = os.getenv("POSTGRES_HOST", "postgres")
 PG_DB   = os.getenv("POSTGRES_DB", "airflow")
 
-ENGINE = create_engine(f"postgresql+psycopg2://{PG_USER}:{PG_PWD}@{PG_HOST}/{PG_DB}")
+# Build connection string so it can be reused by other modules
+ENGINE_STR = f"postgresql+psycopg2://{PG_USER}:{PG_PWD}@{PG_HOST}/{PG_DB}"
+
+# Create SQLAlchemy engine
+ENGINE = create_engine(ENGINE_STR)
 
 # JSON logging setup
 LOG_DIR = Path("/app/logs")
