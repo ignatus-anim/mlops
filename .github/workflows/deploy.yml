@@ -2,7 +2,7 @@ name: Deploy MLOps to EC2
 
 on:
   push:
-    branches: [main]
+    branches: [testing]
   workflow_dispatch:
 
 jobs:
