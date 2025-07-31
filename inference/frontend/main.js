@@ -86,12 +86,10 @@ async function submitDetailedFeedback() {
     return;
   }
   
-  // Get rating
-  const rating = document.querySelector('input[name="rating"]:checked');
   const comment = document.getElementById("feedback-comment").value;
   const actualPrice = document.getElementById("actual-price").value;
   
-  if (!rating && !comment && !actualPrice) {
+  if (!comment && !actualPrice) {
     alert("Please provide at least one type of feedback");
     return;
   }
@@ -99,13 +97,11 @@ async function submitDetailedFeedback() {
   try {
     const payload = {
       prediction_id: currentPredictionId,
-      feedback_type: "rating",
+      feedback_type: "comment",
       feedback_text: comment
     };
     
-    if (rating) {
-      payload.feedback_value = parseInt(rating.value);
-    } else if (actualPrice) {
+    if (actualPrice) {
       payload.feedback_type = "actual_price";
       payload.feedback_value = parseFloat(actualPrice);
     }
@@ -144,7 +140,6 @@ function showFeedbackSuccess(message) {
 }
 
 function clearFeedbackForm() {
-  document.querySelectorAll('input[name="rating"]').forEach(r => r.checked = false);
   document.getElementById("feedback-comment").value = "";
   document.getElementById("actual-price").value = "";
 }

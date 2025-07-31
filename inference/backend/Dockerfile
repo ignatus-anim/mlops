@@ -12,18 +12,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         && rm -rf /var/lib/apt/lists/*
 
-# Copy inference code
-COPY . /app
+# Copy requirements first for better layer caching
+COPY requirements.txt /app/
 
-# Install Python dependencies
-RUN pip install --no-cache-dir \
-        flask \
-        boto3 \
-        numpy \
-        pandas \
-        scikit-learn \
-        sqlalchemy \
-        psycopg2-binary
+# Install Python dependencies from requirements file
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of the source code
+COPY . /app
 
 # Environment variables
 ENV PYTHONUNBUFFERED=1 \

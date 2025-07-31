@@ -2,6 +2,8 @@ services:
   infer-prod:
     build:
       context: ./inference/backend
+    env_file:
+      - .env  # load AWS and other shared secrets
     environment:
       - MODEL_PREFIX=best_model
       - MLFLOW_S3_BUCKET=${MLFLOW_S3_BUCKET:-mlops-bucket0982}
@@ -11,11 +13,14 @@ services:
   infer-cand:
     build:
       context: ./inference/backend
+    env_file:
+      - .env
     environment:
       - MODEL_PREFIX=candidate_model
       - MLFLOW_S3_BUCKET=${MLFLOW_S3_BUCKET:-mlops-bucket0982}
+    # expose candidate backend on host port 6002 -> container port 6001
     ports:
-      - "6002:6002"
+      - "6002:6001"
 
   router:
     image: nginx:1.27-alpine
@@ -26,3 +31,8 @@ services:
     depends_on:
       - infer-prod
       - infer-cand
+  frontend:
+    build:
+      context: ./inference/frontend
+    ports:
+      - "6500:6500"

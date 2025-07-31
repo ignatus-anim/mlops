@@ -2,13 +2,8 @@
 
 import pulumi
 
-from components import StorageBucket, ComputeInstance, Vpc
+from components import ComputeInstance, Vpc
 
-
-# Storage bucket as a reusable component
-bucket_comp = StorageBucket('dataset', prefix='pulumitestbucket4143')
-
-pulumi.export('bucket_name', bucket_comp.bucket_id)
 
 # Create a basic VPC using our reusable component
 vpc = Vpc('core')
@@ -22,6 +17,7 @@ instance = ComputeInstance(
     'web',
     subnet_id=vpc.public_subnet_ids[0],
     vpc_id=vpc.vpc_id,
+    instance_type='t3.medium',
 )
 
 pulumi.export('ec2_instance_id', instance.instance_id)

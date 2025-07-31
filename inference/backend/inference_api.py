@@ -25,12 +25,9 @@ FEEDBACK_COUNT = Counter('feedback_total', 'Total feedback received', ['variant'
 
 @app.route('/api/get_location_names', methods=['GET'])
 def get_location_names():
-    response = jsonify({
+    return jsonify({
         'locations': util.get_location_names()
     })
-    response.headers.add('Access-Control-Allow-Origin', '*')
-
-    return response
 
 @app.route('/api/predict_home_price', methods=['GET', 'POST'])
 def predict_home_price():
@@ -66,20 +63,11 @@ def predict_home_price():
             ERROR_COUNT.labels(variant=variant, error_type='db_log_failed').inc()
             prediction_id = None
 
-        response = jsonify({
-            'estimated_price': pred,
-            'prediction_id': prediction_id,
-            'response_time_ms': round(prediction_time_ms, 2)  # Include timing info
-        })
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        response.headers.add('Access-Control-Allow-Credentials', 'true')
-
-        return response
-        
-    except Exception as e:
-        ERROR_COUNT.labels(variant=variant, error_type='prediction_failed').inc()
-        app.logger.error(f"Prediction failed: {e}")
-        return jsonify({'error': 'Prediction failed'}), 500
+    return jsonify({
+        'estimated_price': pred,
+        'prediction_id': prediction_id,
+        'response_time_ms': round(prediction_time_ms, 2)
+    })
 
 @app.route('/api/feedback', methods=['POST'])
 def submit_feedback():
@@ -97,9 +85,7 @@ def submit_feedback():
         log_feedback(prediction_id, feedback_type, feedback_value, feedback_text, request.remote_addr)
         FEEDBACK_COUNT.labels(variant=variant, feedback_type=feedback_type).inc()
         
-        response = jsonify({'status': 'success', 'message': 'Feedback recorded'})
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
+        return jsonify({'status': 'success', 'message': 'Feedback recorded'})
         
     except Exception as e:
         app.logger.error("Feedback submission failed: %s", e)
@@ -140,9 +126,7 @@ def health_check():
             "database": db_status
         }
         
-        response = jsonify(health_data)
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
+        return jsonify(health_data)
         
     except Exception as e:
         return jsonify({
@@ -209,9 +193,7 @@ def get_metrics():
             }
         }
         
-        response = jsonify(metrics)
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
+        return jsonify(metrics)
         
     except Exception as e:
         app.logger.error(f"Metrics endpoint failed: {e}")
@@ -249,14 +231,12 @@ def get_logs():
                 except json.JSONDecodeError:
                     continue
         
-        response = jsonify({
+        return jsonify({
             'logs': logs,
             'count': len(logs),
             'log_type': log_type,
             'timestamp': datetime.utcnow().isoformat()
         })
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
         
     except Exception as e:
         app.logger.error(f"Logs endpoint failed: {e}")
@@ -288,14 +268,12 @@ def tail_logs():
                 except json.JSONDecodeError:
                     continue
         
-        response = jsonify({
+        return jsonify({
             'logs': logs,
             'count': len(logs),
             'log_type': log_type,
             'timestamp': datetime.utcnow().isoformat()
         })
-        response.headers.add('Access-Control-Allow-Origin', '*')
-        return response
         
     except Exception as e:
         return jsonify({'error': str(e)}), 500
