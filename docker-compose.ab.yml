@@ -31,3 +31,8 @@ services:
     depends_on:
       - infer-prod
       - infer-cand
+  frontend:
+    build:
+      context: ./inference/frontend
+    ports:
+      - "6500:6500"
