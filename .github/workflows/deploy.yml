@@ -21,7 +21,7 @@ jobs:
               cd airflow
               git pull origin main
             else
-              git clone ${{ github.server_url }}/${{ github.repository }}.git airflow
+              git clone https://github.com/ignatus-anim/mlops.git airflow
               cd airflow
             fi
             
