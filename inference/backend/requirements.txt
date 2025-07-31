@@ -2,3 +2,7 @@ Flask
 numpy<1.24
 scikit-learn==1.3.0
 boto3
+
+psutil
+SQLAlchemy>=2.0
+psycopg2-binary
