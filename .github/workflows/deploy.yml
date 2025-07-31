@@ -1,0 +1,50 @@
+name: Deploy MLOps to EC2
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ubuntu
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            # Install Docker if not exists
+            if ! command -v docker &> /dev/null; then
+              sudo apt update -y
+              sudo apt install -y docker.io
+              sudo systemctl start docker
+              sudo systemctl enable docker
+              sudo usermod -aG docker ubuntu
+            fi
+            
+            # Install Docker Compose if not exists
+            if ! command -v docker-compose &> /dev/null; then
+              sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+              sudo chmod +x /usr/local/bin/docker-compose
+            fi
+            
+            # Clone or update repository
+            if [ -d "airflow" ]; then
+              cd airflow
+              git pull origin main
+            else
+              git clone ${{ github.server_url }}/${{ github.repository }}.git airflow
+              cd airflow
+            fi
+            
+            # Stop existing containers
+            docker-compose down || true
+            
+            # Start services with .env file
+            docker-compose --env-file .env up -d --build
+            
+            # Deploy A/B testing stack
+            docker-compose --env-file .env -f docker-compose.yaml -f docker-compose.ab.yml up -d --build
