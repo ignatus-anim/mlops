@@ -2,7 +2,7 @@ name: Deploy MLOps to EC2
 
 on:
   push:
-    branches: [main]
+    branches: [testing]
   workflow_dispatch:
 
 jobs:
@@ -33,3 +33,6 @@ jobs:
             
             # Deploy A/B testing router
             docker compose -f docker-compose.ab.yml up -d --build router
+            
+            # Deploy monitoring stack
+            docker compose -f monitoring/docker-compose.monitoring.yml up -d

@@ -9,9 +9,19 @@ from pathlib import Path
 from log_db import log_request, log_feedback, get_conn, ENGINE_STR
 from sqlalchemy import create_engine, text
 import psutil
+from prometheus_client import Counter, Histogram, Gauge, generate_latest, CONTENT_TYPE_LATEST
 
 app = Flask(__name__)
 app.secret_key = os.urandom(24)  # For session management
+
+# Prometheus metrics
+variant = os.getenv("MODEL_PREFIX", "unknown")
+REQUEST_COUNT = Counter('predictions_total', 'Total predictions', ['variant', 'endpoint'])
+REQUEST_LATENCY = Histogram('prediction_duration_seconds', 'Prediction latency', ['variant'])
+ERROR_COUNT = Counter('prediction_errors_total', 'Total prediction errors', ['variant', 'error_type'])
+SYSTEM_CPU = Gauge('system_cpu_percent', 'CPU usage percentage', ['variant'])
+SYSTEM_MEMORY = Gauge('system_memory_percent', 'Memory usage percentage', ['variant'])
+FEEDBACK_COUNT = Counter('feedback_total', 'Total feedback received', ['variant', 'feedback_type'])
 
 @app.route('/api/get_location_names', methods=['GET'])
 def get_location_names():
@@ -24,43 +34,52 @@ def get_location_names():
 
 @app.route('/api/predict_home_price', methods=['GET', 'POST'])
 def predict_home_price():
-    total_sqft = float(request.form['total_sqft'])
-    location = request.form['location']
-    bhk = int(request.form['bhk'])
-    bath = int(request.form['bath'])
-
-    pred = util.get_estimated_price(location,total_sqft,bhk,bath)
+    REQUEST_COUNT.labels(variant=variant, endpoint='predict').inc()
     
-    # Generate session ID if not exists
-    if 'session_id' not in session:
-        session['session_id'] = str(uuid.uuid4())
-    
-    # Measure prediction time
-    start_time = time.time()
-    pred = util.get_estimated_price(location,total_sqft,bhk,bath)
-    end_time = time.time()
-    prediction_time_ms = (end_time - start_time) * 1000
-    
-    # Log to DB with session, IP, and timing
-    variant = os.getenv("MODEL_PREFIX")
-    user_ip = request.remote_addr
     try:
-        prediction_id = log_request(variant, location, total_sqft, bhk, bath, pred, 
-                                  prediction_time_ms, session['session_id'], user_ip)
-        session['last_prediction_id'] = prediction_id  # Store for feedback
+        total_sqft = float(request.form['total_sqft'])
+        location = request.form['location']
+        bhk = int(request.form['bhk'])
+        bath = int(request.form['bath'])
+        
+        # Generate session ID if not exists
+        if 'session_id' not in session:
+            session['session_id'] = str(uuid.uuid4())
+        
+        # Measure prediction time
+        start_time = time.time()
+        pred = util.get_estimated_price(location,total_sqft,bhk,bath)
+        end_time = time.time()
+        prediction_time_ms = (end_time - start_time) * 1000
+        
+        # Record latency in Prometheus
+        REQUEST_LATENCY.labels(variant=variant).observe(end_time - start_time)
+    
+        # Log to DB with session, IP, and timing
+        user_ip = request.remote_addr
+        try:
+            prediction_id = log_request(variant, location, total_sqft, bhk, bath, pred, 
+                                      prediction_time_ms, session['session_id'], user_ip)
+            session['last_prediction_id'] = prediction_id  # Store for feedback
+        except Exception as e:
+            app.logger.warning("log_request failed: %s", e)
+            ERROR_COUNT.labels(variant=variant, error_type='db_log_failed').inc()
+            prediction_id = None
+
+        response = jsonify({
+            'estimated_price': pred,
+            'prediction_id': prediction_id,
+            'response_time_ms': round(prediction_time_ms, 2)  # Include timing info
+        })
+        response.headers.add('Access-Control-Allow-Origin', '*')
+        response.headers.add('Access-Control-Allow-Credentials', 'true')
+
+        return response
+        
     except Exception as e:
-        app.logger.warning("log_request failed: %s", e)
-        prediction_id = None
-
-    response = jsonify({
-        'estimated_price': pred,
-        'prediction_id': prediction_id,
-        'response_time_ms': round(prediction_time_ms, 2)  # Include timing info
-    })
-    response.headers.add('Access-Control-Allow-Origin', '*')
-    response.headers.add('Access-Control-Allow-Credentials', 'true')
-
-    return response
+        ERROR_COUNT.labels(variant=variant, error_type='prediction_failed').inc()
+        app.logger.error(f"Prediction failed: {e}")
+        return jsonify({'error': 'Prediction failed'}), 500
 
 @app.route('/api/feedback', methods=['POST'])
 def submit_feedback():
@@ -76,6 +95,7 @@ def submit_feedback():
             return jsonify({'error': 'Missing prediction_id or feedback_type'}), 400
         
         log_feedback(prediction_id, feedback_type, feedback_value, feedback_text, request.remote_addr)
+        FEEDBACK_COUNT.labels(variant=variant, feedback_type=feedback_type).inc()
         
         response = jsonify({'status': 'success', 'message': 'Feedback recorded'})
         response.headers.add('Access-Control-Allow-Origin', '*')
@@ -94,8 +114,9 @@ def health_check():
         memory = psutil.virtual_memory()
         disk = psutil.disk_usage('/')
         
-        # Model info
-        variant = os.getenv("MODEL_PREFIX")
+        # Update Prometheus system metrics
+        SYSTEM_CPU.labels(variant=variant).set(cpu_percent)
+        SYSTEM_MEMORY.labels(variant=variant).set(memory.percent)
         
         # Database connectivity test
         db_status = "healthy"
@@ -283,3 +304,7 @@ if __name__ == "__main__":
     print("Starting Python Flask Server For Home Price Prediction on port 6001...")
     util.load_saved_artifacts()
     app.run(host="0.0.0.0", port=6001)
+@app.route('/metrics', methods=['GET'])
+def prometheus_metrics():
+    """Prometheus metrics endpoint"""
+    return generate_latest(), 200, {'Content-Type': CONTENT_TYPE_LATEST}
