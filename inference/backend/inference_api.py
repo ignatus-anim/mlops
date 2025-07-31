@@ -283,6 +283,19 @@ def tail_logs():
     except Exception as e:
         return jsonify({'error': str(e)}), 500
 
+@app.route('/api/drift_report', methods=['GET'])
+def get_drift_report():
+    """Get data drift analysis report"""
+    try:
+        from drift_monitor_simple import get_drift_summary
+        
+        drift_summary = get_drift_summary()
+        return jsonify(drift_summary)
+        
+    except Exception as e:
+        app.logger.error(f"Drift report failed: {e}")
+        return jsonify({'error': 'Failed to generate drift report'}), 500
+
 @app.route('/metrics', methods=['GET'])
 def prometheus_metrics():
     """Prometheus metrics endpoint"""

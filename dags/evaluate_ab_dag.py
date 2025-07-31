@@ -96,6 +96,23 @@ def calculate_feedback_metrics(variant, days_back=7):
         }
 
 def decide_promotion(**_):
+    # Check for data drift first
+    try:
+        import sys
+        sys.path.append('/opt/airflow/inference/backend')
+        from drift_monitor import get_drift_summary
+        
+        drift_summary = get_drift_summary()
+        if drift_summary.get('overall_drift_detected', False):
+            logging.warning("⚠️  Data drift detected - consider retraining before promotion")
+            drift_features = [f for f, i in drift_summary.get('drift_indicators', {}).items() 
+                            if i.get('significant_drift', False)]
+            logging.info(f"Drifted features: {drift_features}")
+        else:
+            logging.info("✅ No significant drift detected")
+    except Exception as e:
+        logging.warning(f"Drift check failed: {e}")
+    
     # Get current model prefixes
     prefixes = get_current_model_prefixes()
     prod_prefix = prefixes['prod_prefix']

@@ -51,8 +51,17 @@ CREATE TABLE IF NOT EXISTS user_feedback (
     user_ip TEXT
 );
 
+CREATE TABLE IF NOT EXISTS feature_logs (
+    id SERIAL PRIMARY KEY,
+    prediction_id INTEGER REFERENCES prediction_logs(id),
+    features JSONB NOT NULL,
+    ts TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
 CREATE INDEX IF NOT EXISTS idx_prediction_logs_variant_ts ON prediction_logs(variant, ts);
 CREATE INDEX IF NOT EXISTS idx_user_feedback_prediction_id ON user_feedback(prediction_id);
+CREATE INDEX IF NOT EXISTS idx_feature_logs_prediction_id ON feature_logs(prediction_id);
+CREATE INDEX IF NOT EXISTS idx_feature_logs_ts ON feature_logs(ts);
 """
 
 with ENGINE.begin() as conn:
@@ -115,6 +124,27 @@ def log_request(variant: str, location: str, sqft: float, bhk: int, bath: int, p
             )
             prediction_id = result.fetchone()[0]
             log_data["prediction_id"] = prediction_id
+            
+            # Log features for drift detection
+            features = {
+                'total_sqft': float(sqft),
+                'bhk': int(bhk),
+                'bath': int(bath),
+                'location': location,
+                'prediction': float(prediction)
+            }
+            
+            conn.execute(
+                text("""
+                    INSERT INTO feature_logs (prediction_id, features, ts)
+                    VALUES (:prediction_id, :features, :ts)
+                """),
+                {
+                    "prediction_id": prediction_id,
+                    "features": json.dumps(features),
+                    "ts": timestamp
+                }
+            )
     except Exception as e:
         print(f"Failed to log to PostgreSQL: {e}")
         # Still try to log to JSON even if DB fails
