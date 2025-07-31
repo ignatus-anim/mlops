@@ -1,0 +1,52 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "MLOps A/B Testing Dashboard",
+    "tags": ["mlops", "inference"],
+    "timezone": "browser",
+    "panels": [
+      {
+        "id": 1,
+        "title": "Prediction Rate",
+        "type": "stat",
+        "targets": [
+          {
+            "expr": "rate(predictions_total[5m])",
+            "legendFormat": "{{variant}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Response Time",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.95, prediction_duration_seconds_bucket)",
+            "legendFormat": "95th percentile - {{variant}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 0}
+      },
+      {
+        "id": 3,
+        "title": "System Resources",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "system_cpu_percent",
+            "legendFormat": "CPU - {{variant}}"
+          },
+          {
+            "expr": "system_memory_percent",
+            "legendFormat": "Memory - {{variant}}"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 8}
+      }
+    ],
+    "time": {"from": "now-1h", "to": "now"},
+    "refresh": "5s"
+  }
+}
