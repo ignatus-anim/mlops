@@ -25,11 +25,11 @@ jobs:
         run: |
           python -m pytest tests/unit/ -v
 
-  deploy-core:
+  deploy:
     runs-on: ubuntu-latest
     needs: test
     steps:
-      - name: Deploy Core Services
+      - name: Deploy MLOps Stack
         uses: appleboy/ssh-action@v1.0.3
         with:
           host: ${{ secrets.EC2_HOST }}
@@ -55,31 +55,9 @@ jobs:
             
             # Start core services
             docker compose up -d
-
-  deploy-ab:
-    runs-on: ubuntu-latest
-    needs: deploy-core
-    steps:
-      - name: Deploy A/B Testing
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ubuntu
-          key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-            cd airflow
+            
+            # Deploy A/B testing
             docker compose -f docker-compose.ab.yml up -d --build router
-
-  deploy-monitoring:
-    runs-on: ubuntu-latest
-    needs: deploy-ab
-    steps:
-      - name: Deploy Monitoring
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ubuntu
-          key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-            cd airflow
+            
+            # Deploy monitoring
             docker compose -f monitoring/docker-compose.monitoring.yml up -d
