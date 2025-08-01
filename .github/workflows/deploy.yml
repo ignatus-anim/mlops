@@ -2,10 +2,29 @@ name: Deploy MLOps to EC2
 
 on:
   push:
-    branches: [main]
+    branches: [testing]
   workflow_dispatch:
 
 jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      
+      - name: Install test dependencies
+        run: |
+          pip install -r tests/requirements-test.txt
+      
+      - name: Run unit tests
+        run: |
+          python -m pytest tests/unit/ -v
+
   deploy-core:
     runs-on: ubuntu-latest
     steps:
