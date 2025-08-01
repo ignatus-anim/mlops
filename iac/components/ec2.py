@@ -124,6 +124,10 @@ usermod -a -G docker ubuntu
             key_name=key_name,
             user_data=user_data,
             iam_instance_profile=instance_profile.name,
+            root_block_device=ec2.InstanceRootBlockDeviceArgs(
+                volume_size=20,
+                volume_type="gp3"
+            ),
             tags={"Name": f"{name}-ec2"},
             opts=child_opts,
         )
