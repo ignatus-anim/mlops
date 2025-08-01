@@ -36,6 +36,13 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
+            # Expand root partition to use full EBS volume
+            sudo growpart /dev/nvme0n1 1
+            sudo resize2fs /dev/nvme0n1p1
+            
+            # Clean up Docker to free space
+            docker system prune -af --volumes
+            
             # Clone or update repository
             if [ -d "airflow" ]; then
               cd airflow
