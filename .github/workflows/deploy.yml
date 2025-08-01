@@ -27,6 +27,7 @@ jobs:
 
   deploy-core:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Deploy Core Services
         uses: appleboy/ssh-action@v1.0.3
@@ -43,6 +44,11 @@ jobs:
               git clone https://github.com/ignatus-anim/mlops.git airflow
               cd airflow
             fi
+            
+            # Create .env file from secrets
+            cat > .env << 'EOF'
+            ${{ secrets.ENV_FILE }}
+            EOF
             
             # Stop existing containers
             docker compose down || true
