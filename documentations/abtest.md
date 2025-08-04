@@ -123,39 +123,68 @@ Logic summary:
    2. Triggers `evaluate_ab_dag` to start the A/B evaluation cycle.
 3. The dedicated `generate_candidate_dag.py` has been removed—maintenance is simpler and timing is guaranteed.
 
-### 5. Performance-Based Evaluation
+### 5. Automated Promotion & Rollback Logic
 
 **Location**: `dags/evaluate_ab_dag.py`
 
-**Schedule**: Hourly analysis
+**Schedule**: Hourly evaluation via Airflow DAG
 
-**Decision Matrix**:
-
-| Metric | Weight | Promotion Threshold | Rollback Threshold |
-|--------|--------|-------------------|-------------------|
-| **User Rating** | 70% | 10% improvement | 20% degradation |
-| **Latency** | 30% | 20% faster | 2x slower |
-| **MAE** (if available) | Bonus | 10% better | - |
-
-**Composite Scoring**:
-```python
-# Normalize metrics (0-1 scale)
-accuracy_score = rating / 5.0
-latency_score = max(0, (5000 - latency_ms) / 5000)
-
-# Weighted composite
-composite_score = accuracy_score * 0.7 + latency_score * 0.3
-
-# Promote if 5% better composite score
-if candidate_composite > production_composite + 0.05:
-    return "promote"
-```
+#### Decision Process (`decide_promotion()`)
 
 **Safety Checks**:
-- 🛡️ **Minimum traffic**: Require 50+ candidate requests
-- 🛡️ **Minimum feedback**: Need 10+ user ratings
-- 🛡️ **Maximum duration**: Auto-rollback after 7 days
-- 🛡️ **Performance degradation**: Immediate rollback if significantly worse
+- **Minimum Traffic**: Requires ≥50 candidate requests in 24h
+- **Minimum Feedback**: Needs ≥10 user ratings for reliable metrics
+- **Data Drift**: Integrates drift detection warnings
+
+**Performance Metrics**:
+- **User Ratings**: Average 1-5 star ratings from feedback
+- **MAE**: Mean Absolute Error (when actual prices provided)
+- **Testing Duration**: Maximum 7 days before forced decision
+
+**Decision Rules**:
+```python
+# ROLLBACK: Candidate 20% worse than production
+if cand_rating < prod_rating * 0.8:
+    return "rollback"
+
+# PROMOTE: Candidate 10% better rating
+if cand_rating > prod_rating * 1.1:
+    return "promote"
+
+# PROMOTE: MAE 10% better (if available)
+if cand_mae < prod_mae * 0.9:
+    return "promote"
+
+# ROLLBACK: Testing period expired (7 days)
+if days_testing > 7:
+    return "rollback"
+
+# CONTINUE: Performance acceptable
+return "skip"
+```
+
+#### Promotion Process (`promote_model()`)
+1. **Version Management**: Copy `CO{n}` → `BO{n+1}` using `promote_candidate_to_best()`
+2. **Container Restart**: `docker compose restart infer-prod` to load new model
+3. **Trigger Training**: Start generation of next candidate model
+4. **Logging**: Record promotion event with metrics
+
+#### Rollback Process (`rollback_candidate()`)
+1. **Artifact Cleanup**: Delete all `CO{n}` objects from S3
+2. **Trigger Retraining**: Generate fresh candidate model
+3. **Logging**: Record rollback reason and performance data
+
+#### Model Versioning System
+- **Best Models**: `price_check_BO1`, `price_check_BO2`, `price_check_BO3`...
+- **Candidates**: `price_check_CO1`, `price_check_CO2`, `price_check_CO3`...
+- **Dynamic Detection**: Automatically finds latest versions from S3
+- **Atomic Operations**: Ensures consistent state during transitions
+
+**Integration Points**:
+- 📊 **Database**: Queries `prediction_logs` and `user_feedback` tables
+- 🗄️ **S3**: Model artifact storage and management
+- 🐳 **Docker**: Container restarts for model loading
+- 📈 **Drift Monitoring**: Considers data distribution changes
 
 ## A/B Testing Workflow
 
